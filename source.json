@@ -3,5 +3,12 @@
     "id": "net.wirenook.vpm",
     "url": "https://wirenook.net/vpm/listing.json",
     "author": "Cassidy Prather",
-    "githubRepos": []
+    "githubRepos": [
+        "CassidyPrather/cass-avatar",
+        "CassidyPrather/wirenook-assets",
+        "CassidyPrather/locomotion",
+        "CassidyPrather/world-sync",
+        "CassidyPrather/avatar-stations",
+        "CassidyPrather/adventure-tools"
+    ]
 }

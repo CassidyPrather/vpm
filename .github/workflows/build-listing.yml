@@ -2,6 +2,10 @@ name: Build Repo Listing
 
 on:
   workflow_dispatch:
+  # Sent by each package repository's release job once its assets are up
+  # (the "Rebuild the VPM listing" step in its ci-cd.yml).
+  repository_dispatch:
+    types: [package-released]
   push:
     branches: main
     paths:
