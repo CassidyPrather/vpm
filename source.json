@@ -9,6 +9,9 @@
         "CassidyPrather/locomotion",
         "CassidyPrather/world-sync",
         "CassidyPrather/avatar-stations",
-        "CassidyPrather/adventure-tools"
+        "CassidyPrather/adventure-tools",
+        "CassidyPrather/party-tricks",
+        "CassidyPrather/shape-collector",
+        "CassidyPrather/contacts"
     ]
 }

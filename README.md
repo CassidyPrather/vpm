@@ -15,6 +15,14 @@ that repository: a fine-grained token with **Contents: read and write** on
 `CassidyPrather/vpm` only. Without the secret, releases still publish but skip
 the rebuild.
 
+To issue the secret, make that token and run:
+
+```sh
+./issue-dispatch-token.sh    # asks for the token; sets it on every repository in source.json and the template
+```
+
+Run it again after replacing the token or adding a repository.
+
 ## Legal
 
 Copyright 2026 Cassidy Prather <cassidy@wirenook.net>
