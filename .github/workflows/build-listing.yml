@@ -28,9 +28,6 @@ jobs:
 
   build-listing:
     name: build-listing
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
 
@@ -49,6 +46,19 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: publish
+
+  # A job of its own, as GitHub's Pages workflows have it: deploying from the
+  # job that uploaded the artifact stopped finding it ("No artifacts named
+  # github-pages were found"), since an artifact is only reliably there for
+  # another job once the one that made it has ended.
+  deploy:
+    name: deploy
+    needs: build-listing
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
 
       - name: Deploy to GitHub Pages
         id: deployment
