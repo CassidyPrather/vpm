@@ -11,6 +11,7 @@
         "CassidyPrather/avatar-stations",
         "CassidyPrather/adventure-tools",
         "CassidyPrather/party-tricks",
-        "CassidyPrather/contacts"
+        "CassidyPrather/contacts",
+        "CassidyPrather/selective-animation"
     ]
 }
